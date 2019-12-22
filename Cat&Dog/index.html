@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/all.css">    
+<title>狗狗貓貓來認養</title>
+</head>
+
+<body>
+    <div class="container-fluid text-light  p-3 bg-dark">
+        <div class="h2 text-center my-4  ">貓貓狗狗領養</div>
+        <div class="row d-flex">
+
+         
+            <div class="col-md-3">
+                <h4>貓貓or狗狗</h4>
+
+                <select id='selectId' class="form-control form-control-sm my-2">
+                    <option value='all'> 不拘</option>
+                    <option value="狗">狗狗 </option>
+
+                    <option value="貓">貓貓 </option>
+                   
+                </select>
+
+
+
+            </div>
+
+    <div class="col-md-3">
+        <h4>年紀</h4>
+        <select id='ageId' class="form-control form-control-sm my-2">
+            <option value='all'> 不拘</option>
+            <option value="CHILD">小孩 </option>
+            <option value="ADULT">成年</option>
+    
+        </select>
+    
+    
+    
+    </div>
+
+
+
+
+            <div class="col-md-3">
+                <h4>性別</h4>
+                <select id='sexId' class="form-control form-control-sm my-2">
+                    <option value='all'> 不拘</option>
+                    <option value="M">男生 </option>
+                    <option value="F">女生</option>
+                </select>
+
+
+            </div>
+
+
+        
+    
+            <div class="col-md-3">
+                <h4>地點</h4>
+                <select id='areaId' class="form-control form-control-sm my-2">
+                    <option value='all'>選擇地點</option>
+                    <option value="臺北市動物之家">台北</option>
+                    <option value="宜蘭縣流浪動物中途之家">宜蘭</option>
+                    <option value="臺南市動物之家灣裡站">臺南 </option>
+                    <option value="臺東縣動物收容中心">臺東 </option>
+                    <option value="高雄市壽山動物保護教育園區">高雄</option>
+                    <option value="金門縣動物收容中心">金門 </option>
+                 
+                </select>
+
+            </div>
+        </div>
+       
+
+
+    </div>
+
+<div class="container d-flex justify-content-center ">
+<button type="button" class="btn font-weight-bold btn-outline-warning btn-lg m-2">Search!</button>
+<button type="button"  Value="重新整理" onClick="window.location.reload();"class="btn font-weight-bold btn-outline-secondary btn-lg m-2">Clear</button>
+
+</div>
+<div class="container my-3">
+
+  <div class="background my-2"></div>  
+    <div class="char">
+        <div class='tools'></div>
+    </div>
+    </div>
+
+    
+    <div class="container-fluid mt-6">
+
+      <div class="row d-flex justify-content-center list  ">
+           
+    </div>
+
+    </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+        <script type="text/javascript" src="js/data.js"></script>
+        <script type="text/javascript" src="js/all.js"></script>
+</body>
+
+</html>

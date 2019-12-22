@@ -1,0 +1,191 @@
+
+
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "helpers/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/mixins";
+// Optional
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/code";
+@import "../node_modules/bootstrap/scss/grid";
+img{
+
+  max-width: 100%;
+}
+ body{
+  @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro&display=swap');
+  font-family: 'Source Sans Pro', "Arial","黑體-繁","微軟正黑體", sans-serif;//font-family: "Microsoft JhengHei","Segoe UI","Roboto","Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" ;
+      }
+
+//ALL 
+.container{
+  position: relative;
+}
+.char{
+  position: relative;
+}
+
+%tools{
+ background-position:center center;
+position: absolute;
+background-size:contain;
+background-repeat: no-repeat;}
+
+%char{
+ background-size:contain;
+  height:350px;
+ background-position:center center;
+background-repeat: no-repeat;
+position: absolute;
+top:100px;
+bottom:0;
+left:0;
+right:0;
+
+}
+
+%background{
+ background-size:contain;
+  max-width: 2000px;
+  height: 400px;
+  background-repeat: no-repeat;
+background-position:center center;
+background-size: cover;
+ border :2px rgba(255, 255, 255, 0.74) solid;
+border-radius:30px ;
+}
+
+.cat{
+  background-image:url(../stylesheets/images/Cat.png);
+@extend %char;
+
+}
+.dog{
+  background-image:url(../stylesheets/images/Dog.png);
+@extend %char;
+}
+.kitty{
+   background-image:url(../stylesheets/images/kitty.png);
+@extend %char;
+}
+.puppy{
+   background-image:url(../stylesheets/images/puppy.png);
+ @extend %char;
+
+}
+
+
+.male{
+   background-image:url(../stylesheets/images/beard.png);
+@extend %tools;
+  height:70px;
+
+
+top:19%;
+bottom:0;
+left:0;
+right:7%;
+}
+
+.female{
+   background-image:url(../stylesheets/images/lip.png);
+@extend %tools;
+  height:20px;
+top:25%;
+bottom:0;
+left:0;
+right:7%;
+}
+
+.girl{
+   background-image:url(../stylesheets/images/bow.png);
+@extend %tools;
+  height:90px;
+top:3%;
+bottom:0;
+left:0;
+right:0;
+}
+
+.boy{
+   background-image:url(../stylesheets/images/tie.png);
+@extend %tools;
+  height:110px;
+top:49%;
+bottom:0;
+left:8%;
+right:0;
+}
+
+
+@media(max-width:375px){
+
+
+.boy{
+
+left:20%;
+
+}
+
+
+.male{
+
+right:22%;
+}
+
+
+.female{
+
+right:22%;
+                }                }
+
+
+
+
+
+
+.Kinmen{
+
+    background-image:url(../stylesheets/images/Kinmen.jpg);
+  
+@extend %background;
+}
+
+.I-len{
+
+    background-image:url(../stylesheets/images/I-lan.jpg);
+  
+@extend %background;
+}
+
+.Tainan{
+
+    background-image:url(../stylesheets/images/Tainan.jpg);
+  
+@extend %background;
+}
+
+
+.Taipei{
+
+    background-image:url(../stylesheets/images/Taipei.jpg);
+  
+@extend %background;
+}
+
+.Taitung{
+
+    background-image:url(../stylesheets/images/Taitung.jpg);
+  
+@extend %background;
+}
+.Kaohsiung{
+    background-image:url(../stylesheets/images/Kaohsiung.jpg);
+    @extend %background;
+}
+
+

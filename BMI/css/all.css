@@ -1,0 +1,500 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+    .warp{
+      max-width: 1200px;
+      margin: 0 auto;
+    font-family:Microsoft JhengHei;
+    font-size: 18px;
+  
+
+    }
+.flex{
+  position: relative;
+}
+
+   .header{
+margin: 0 auto;
+  padding: 100px;
+  background-color:#424242;
+display: flex;
+   }
+
+
+.content{
+ background-color:#f1f1f1;
+ padding-bottom: 100px;
+
+
+
+}
+
+.content h1{
+  text-align: center;
+  padding-top: 50px;
+  font-size: 26px;
+  margin-bottom: 30px;
+  
+}
+
+.footer{
+  padding-top: 20px;
+  background-color:#FFD366 ;
+  padding-bottom: 20px;
+}
+
+
+.footerimg{
+
+
+  text-align: center;
+  
+}
+
+
+.logo{
+
+}
+
+
+.BMI{
+margin-left:200px;
+width: 400px;
+
+
+   }
+
+   .height{
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid #FFD366;
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    margin-bottom: 10px;
+    display: block;
+
+   }
+
+   .weight{
+     background: rgba(255, 255, 255, 0.15);
+    border: 2px solid #FFD366;
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    margin-top: 10px;
+    display: block;
+   }
+
+
+
+
+
+.btn{
+
+  border-radius: 80px;
+  height: 120px;
+  background-color:#FFD366;
+  width:120px;
+  color:#424242;
+  font-size: 24px;
+  margin-right:10%;
+
+ font-family:Microsoft JhengHei;
+ font-weight:bolder;
+}
+
+
+
+#style{
+ 
+ 
+  margin-right: 20px;
+   position: relative;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+
+
+/*btn的切換_blue狀態*/
+.blue {
+    border: 6px solid #31BAF9;
+  background-color: #424242;
+
+}
+
+/*背景的圖形*/
+.blue .circular {
+  position: absolute;
+  left: 80px;
+  bottom:0px;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #424242;
+  border-radius: 50%;
+  background-image: url(../images/icons_loop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #31BAF9;
+}
+
+/*背景的數字*/
+.blue .value {
+  margin-top: 5px;
+  font-family: AppleSystemUIFont;
+  font-size: 32px;
+  color: #31BAF9;
+  line-height: 21px;
+}
+
+/*切換bmi的顏色*/
+.blue .bmi {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #31BAF9;
+}
+
+/*體重狀態*/
+.blue_ans{
+
+margin-top: 40px;
+font-size: 30px;
+color: #31BAF9;
+
+}
+
+
+
+/*btn的切換_green狀態*/
+.green {
+ 
+  background-color: #424242;
+  border: 6px solid #86D73F;
+
+}
+
+/*背景的圖形*/
+.green .circular {
+  position: absolute;
+  left: 80px;
+  bottom:0px;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #424242;
+  border-radius: 50%;
+  background-image: url(../images/icons_loop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #86D73F;
+}
+
+/*背景的數字*/
+.green .value {
+  margin-top: 5px;
+  font-family: AppleSystemUIFont;
+  font-size: 32px;
+  color: #86D73F;
+  line-height: 30px;
+}
+
+/*切換bmi的顏色*/
+.green .bmi {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #86D73F;
+}
+
+/*體重狀態*/
+.green answer{
+
+margin-top: 40px;
+font-size: 30px;
+color: #31BAF9;
+
+}
+
+.green_ans{
+
+margin-top: 40px;
+font-size: 30px;
+color: #86D73F;
+
+}
+
+
+/*btn的切換_orange1狀態*/
+.orange1 {
+ 
+  background-color: #424242;
+  border: 6px solid #FF982D;
+
+}
+
+/*背景的圖形*/
+.orange1 .circular {
+  position: absolute;
+  left: 80px;
+  bottom:0px;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #424242;
+  border-radius: 50%;
+  background-image: url(../images/icons_loop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color:#FF982D;
+}
+
+/*背景的數字*/
+.orange1 .value {
+  margin-top: 5px;
+  font-family: AppleSystemUIFont;
+  font-size: 32px;
+  color: #FF982D;
+  line-height: 30px;
+}
+
+/*切換bmi的顏色*/
+.orange1 .bmi {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #FF982D;
+}
+
+/*體重狀態*/
+.orange1_ans{
+
+margin-top: 40px;
+font-size: 30px;
+color: #FF982D;
+
+}
+
+
+/*btn的切換_orange2狀態*/
+.orange2 {
+ 
+  background-color: #424242;
+  border: 6px solid #FF6C02;
+
+}
+
+/*背景的圖形*/
+.orange2 .circular {
+  position: absolute;
+  left: 80px;
+  bottom:0px;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #424242;
+  border-radius: 50%;
+  background-image: url(../images/icons_loop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color:#FF6C02;
+}
+
+/*背景的數字*/
+.orange2 .value {
+  margin-top: 5px;
+  font-family: AppleSystemUIFont;
+  font-size: 32px;
+  color: #FF6C02;
+  line-height: 30px;
+}
+
+/*切換bmi的顏色*/
+.orange2 .bmi {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #FF6C02;
+}
+
+/*體重狀態*/
+.orange2_ans{
+
+margin-top: 40px;
+font-size: 30px;
+color: #FF6C02;
+
+}
+/*btn的切換_red狀態*/
+.red {
+ 
+  background-color:#424242;
+  border: 6px solid #FF1200;
+ 
+}
+
+/*背景的圖形*/
+.red .circular {
+  position: absolute;
+  left: 80px;
+  bottom:0px;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #FF1200 ;
+  border-radius: 50%;
+  background-image: url(../images/icons_loop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color:#FF1200;
+}
+
+/*背景的數字*/
+.red .value {
+  margin-top: 5px;
+  font-family: AppleSystemUIFont;
+  font-size: 32px;
+  color: #FF1200;
+  line-height: 30px;
+}
+
+/*切換bmi的顏色*/
+.red .bmi {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #FF1200;
+}
+
+/*體重狀態*/
+.red_ans{
+
+margin-top: 40px;
+font-size: 30px;
+color: #FF1200;
+
+}
+
+
+.setColor{
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  height: 60px;
+  width: 10px;
+}
+
+
+#blue{
+  background-color:#31BAF9;
+}
+
+#green{
+  background-color: #86D73F;
+}
+
+#orange1{
+  background-color:#FF982D ;
+}
+
+#orange2{
+  background-color:#FF982D;
+}
+
+#red{
+  background-color:#FF1200;
+}
+
+
+
+
+
+
+.list{ 
+
+  justify-content: start;
+  width: 700px;
+  position: relative;
+    margin: 0 auto;
+  }
+
+
+
+.list li{
+  background-color:#FFFFFF ;
+    margin-bottom: 20px;
+    padding: 20px;
+ 
+}
+
+
+
+
+.list a{
+text-decoration: none;
+color:black;
+margin-left:50px; 
+font-weight: bolder;
+ font-size: 18px;
+}
+
+.list a:hover{
+  color:red;
+
+}
+
+.list span{
+
+
+  font-size: 14px;
+  margin-right: 2%;
+  margin-left:2%;
+}
+.list .time{
+  
+  margin-left:50px;
+}
+
+.list  .staus{
+width: 80px;
+
+}
